@@ -46,8 +46,7 @@ def remove_punctuation(tweet):
 
 
 def scrub_tweet(tweet):
-    t1 = tweet
-    t2_links = remove_hyperlinks(t1)
+    t2_links = remove_hyperlinks(tweet)
     t3_usernames = remove_usernames(t2_links)
     t4_hashtags = remove_hashtags(t3_usernames)
     t5_stopwords = remove_stopwords(t4_hashtags)
