@@ -1,5 +1,5 @@
 """
-Simple module with functions for cleaning and preparing tweet data for further analysis. Functions expect a string.
+Simple module with functions for cleaning and preparing tweet data for further analysis.
 
 functions in module:
 - remove_hyperlinks
@@ -7,7 +7,7 @@ functions in module:
 - remove_hashtags
 - remove_stopwords
 - remove_punctuation
-- scrub_tweet: runs all other cleaning functions as a general tweet clean.
+- scrub_tweet: runs all other cleaning functions.
 """
 
 # Imports
