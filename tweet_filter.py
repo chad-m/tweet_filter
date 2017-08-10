@@ -58,7 +58,10 @@ def punctuation_filter(tweet):
     return t
 
 
-def tweet_filter(tweet, filters=None):
+def tweet_filter(tweet, filters=[]):
+    # Check that filters list is not empty
+    assert filters, "Filters list is empty. Specify which filters to apply."
+
     # Applies specified list of filter functions to a given tweet
     for _ in filters:
         tweet = _(tweet)
