@@ -46,9 +46,9 @@ def hashtags_filter(tweet):
     return t
 
 
-def stopwords_filter(tweet):
+def stopwords_filter(tweet, sw=stop_words):
     # Removes stopwords from a given tweet
-    t = "".join([ for w in tweet.split() if w not in stop_words])
+    t = "".join([w for w in tweet.split() if w not in sw])
     return t
 
 
