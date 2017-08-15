@@ -62,7 +62,7 @@ def tweet_filter(tweet, filters=[]):
     # Check that filters list is not empty
     assert filters, "Filters list is empty. Specify which filters to apply."
 
-    # Applies specified list of filter functions to a given tweet
+    # Apply specified list of filter functions to a given tweet
     for _ in filters:
         tweet = _(tweet)
     return tweet
