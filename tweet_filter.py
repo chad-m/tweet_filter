@@ -1,13 +1,5 @@
 """
-Simple module with functions for filtering unwanted sub strings from a tweet.
-
-Filter functions available:
-- hyperlinks_filter
-- usernames_filter
-- hashtags_filter
-- stopwords_filter
-- punctuation_filter
-- tweet_filter: runs specified list of other filter functions.
+Functions to filter unwanted sub strings from tweet text.
 
 Example use:
 tweet = tweet_filter(tweet, filters=[
