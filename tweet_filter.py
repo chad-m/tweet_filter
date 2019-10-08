@@ -55,6 +55,6 @@ def tweet_filter(tweet, filters=[]):
     assert filters, "Filters list is empty. Specify which filters to apply."
 
     # Apply specified list of filter functions to a given tweet
-    for _ in filters:
-        tweet = _(tweet)
+    for f in filters:
+        tweet = f(tweet)
     return tweet
